@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Exemplo de Conexão MySQL',
+      title: 'CURSOS DE INFORMÁTICA',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -69,7 +69,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Exemplo de Conexão MySQL'),
+        title: const Text('CURSOS DE INFORMÁTICA'),
+        centerTitle: true,
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -79,10 +80,11 @@ class _MyHomePageState extends State<MyHomePage> {
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 4,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10,
-                    childAspectRatio: itemWidth / 150),
+                  crossAxisCount: 4,
+                  crossAxisSpacing: 10,
+                  mainAxisSpacing: 10,
+                  childAspectRatio: itemWidth / 150,
+                ),
                 itemCount: _users.length,
                 itemBuilder: (context, index) {
                   final user = _users[index];
